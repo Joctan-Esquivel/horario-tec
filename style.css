@@ -14,7 +14,7 @@ body
     background-color: #fff;
 }
 
-.cinta-arriba
+.cinta-arriba-azul
 {
     background: linear-gradient( #453b86 ,#140e39);
     width: 100%;
@@ -22,6 +22,17 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cinta-arriba-roja
+{
+    background: linear-gradient(#e75d62 , #a7272b );
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .contenedor-logo-tec
@@ -39,6 +50,27 @@ body
     
 }
 
+.texto-cinta-roja
+{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.texto-cinta-roja:hover
+{
+    color: rgb(216, 216, 216);
+    font-size: 16px;
+    transition: 500ms;
+}
+
+.bloque-cinta2
+{
+    margin-left: 2.5%;
+    
+}
+
 .texto-cinta
 {
     color: #fff;
@@ -50,6 +82,10 @@ body
 .texto-cinta:hover
 {
     color: rgb(184, 184, 184);
+    text-decoration: underline;
+    font-size: 16px;
+    transition: 500ms;
+
 }
 
 .contenedor-clases
@@ -113,7 +149,7 @@ h2:hover
     color: rgb(255, 255, 255);
 }
 
-.intro-taller
+.cuadros_rojos
 {
     width: 45%;
     background: linear-gradient(#ff7074,#9e1317);
@@ -122,7 +158,7 @@ h2:hover
     padding: 1.1%;
 }
 
-.comu-escrita
+.cuadros_azules
 {
     width: 45%;
     background: linear-gradient( #6b5fbb ,#140e39);
@@ -199,6 +235,7 @@ th
 {
     border-color: rgb(255, 255, 255);
     background: linear-gradient(rgb(191, 19, 197) , rgb(58, 3, 70));
+    cursor: pointer;
 }
 
 
@@ -275,7 +312,7 @@ th
 .contenedor-iconos4:hover
 {
     width: 14%;
-    transition: 500ms;
+    transition: 600ms;
 }
 
 img
