@@ -139,6 +139,16 @@ h2
     margin-bottom: 4%;
 }
 
+h3
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-top: 3%;
+}
+
+
 h1:hover
 {
     color: rgb(255, 255, 255);
@@ -154,7 +164,6 @@ h2:hover
     width: 45%;
     background: linear-gradient(#ff7074,#9e1317);
     border: 1px black solid;
-    
     padding: 1.1%;
 }
 
@@ -163,7 +172,24 @@ h2:hover
     width: 45%;
     background: linear-gradient( #6b5fbb ,#140e39);
     border: 1px black solid;
+    padding: 1.1%;
+}
+/* Estos cuadros de abajo se utilizan unicamente en caso de que sean los ultimos cuadros de la pagina */
+.cuadros_rojos_ultimos
+{
+    width: 45%;
+    background: linear-gradient(#cea800,#da7b00);
+    border: 1px black solid;
     
+    padding: 1.1%;
+}
+
+.cuadros_azules_ultimos
+{
+    width: 45%;
+    background: linear-gradient(#cea800,#da7b00);
+    border: 1px black solid;
+    margin-bottom: 10%;
     padding: 1.1%;
 }
 
@@ -323,7 +349,10 @@ img
     width: 100%;
 }
 
-.MensajeProvisional
+/* Mensaje Provisional en caso de cambiar de semestre
+Es el simbolo de carga y el mensaje. */
+
+/* .MensajeProvisional
 {
     width: 50%;
     
@@ -415,6 +444,6 @@ img
       transform: rotate(360deg);
       background-position: 50% 36px;
     }
-  }
+  } */
       
 
