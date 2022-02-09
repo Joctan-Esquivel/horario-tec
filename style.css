@@ -167,6 +167,8 @@ h2:hover
     padding: 1.1%;
 }
 
+
+
 .cuadros_azules
 {
     width: 45%;
@@ -174,11 +176,21 @@ h2:hover
     border: 1px black solid;
     padding: 1.1%;
 }
+
+.cuadros_beto
+{
+    width: 45%;
+    background: linear-gradient(#cea800,#da7b00);
+    border: 1px black solid;
+    padding: 1.1%;
+}
+
+
 /* Estos cuadros de abajo se utilizan unicamente en caso de que sean los ultimos cuadros de la pagina */
 .cuadros_rojos_ultimos
 {
     width: 45%;
-    background: linear-gradient(#cea800,#da7b00);
+    background: linear-gradient(#ff7074,#9e1317);
     border: 1px black solid;
     
     padding: 1.1%;
@@ -187,7 +199,7 @@ h2:hover
 .cuadros_azules_ultimos
 {
     width: 45%;
-    background: linear-gradient(#cea800,#da7b00);
+    background: linear-gradient( #6b5fbb ,#140e39);
     border: 1px black solid;
     margin-bottom: 10%;
     padding: 1.1%;
