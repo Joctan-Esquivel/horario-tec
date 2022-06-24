@@ -397,7 +397,7 @@ Es el simbolo de carga y el mensaje. */
     background: linear-gradient(#c1272d 30px, transparent 0) no-repeat;
     background-size: 2px 40px;
     background-position: 50% 0px;
-    animation: spinx 5s linear infinite;
+    animation: spinx 7s linear infinite;
   }
   .loader:before, .loader:after {
     content: "";
@@ -412,13 +412,13 @@ Es el simbolo de carga y el mensaje. */
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: 0 0px;
-    animation: lqt 5s linear infinite;
+    animation: lqt 7s linear infinite;
   }
   .loader:after {
     top: auto;
     bottom: 0;
     border-radius: 20px 20px 0 0;
-    animation: lqb 5s linear infinite;
+    animation: lqb 7s linear infinite;
   }
   @keyframes lqt {
     0%, 100% {
