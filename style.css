@@ -365,7 +365,7 @@ img
 /* Mensaje Provisional en caso de cambiar de semestre
 Es el simbolo de carga y el mensaje. */
 
-/* .MensajeProvisional
+ .MensajeProvisional
 {
     width: 50%;
     
@@ -457,6 +457,6 @@ Es el simbolo de carga y el mensaje. */
       transform: rotate(360deg);
       background-position: 50% 36px;
     }
-  } */
+  }
       
 
