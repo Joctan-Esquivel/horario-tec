@@ -14,6 +14,7 @@ body
     background-color: #fff;
 }
 
+
 .cinta-arriba-azul
 {
     background: linear-gradient( #453b86 ,#140e39);
@@ -46,8 +47,8 @@ body
 
 .bloque-cinta1
 {
-    margin-left: 2.5%;
-    
+    margin-left: 2%;
+    display: block;
 }
 
 .texto-cinta-roja
@@ -87,6 +88,9 @@ body
     transition: 500ms;
 
 }
+
+
+
 
 .contenedor-clases
 {
@@ -139,6 +143,16 @@ h2
     margin-bottom: 4%;
 }
 
+h3
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-top: 3%;
+}
+
+
 h1:hover
 {
     color: rgb(255, 255, 255);
@@ -154,7 +168,6 @@ h2:hover
     width: 45%;
     background: linear-gradient(#ff7074,#9e1317);
     border: 1px black solid;
-    
     padding: 1.1%;
 }
 
@@ -163,7 +176,24 @@ h2:hover
     width: 45%;
     background: linear-gradient( #6b5fbb ,#140e39);
     border: 1px black solid;
+    padding: 1.1%;
+}
+/* Estos cuadros de abajo se utilizan unicamente en caso de que sean los ultimos cuadros de la pagina */
+.cuadros_rojos_ultimos
+{
+    width: 45%;
+    background: linear-gradient(#cea800,#da7b00);
+    border: 1px black solid;
     
+    padding: 1.1%;
+}
+
+.cuadros_azules_ultimos
+{
+    width: 45%;
+    background: linear-gradient(#cea800,#da7b00);
+    border: 1px black solid;
+    margin-bottom: 10%;
     padding: 1.1%;
 }
 
@@ -244,10 +274,13 @@ th
     background-color: #c1272d;
     margin-top: 4%;
     width: 100%;
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    bottom: 0%;
+    position: fixed;
 }
 
 .icons
@@ -320,3 +353,265 @@ img
     width: 100%;
 }
 
+/* Mensaje Provisional en caso de cambiar de semestre
+Es el simbolo de carga y el mensaje. */
+
+.MensajeProvisional
+{
+    width: 50%;
+    
+    margin: auto auto;
+    margin-top: 10%;
+    margin-bottom: 121px;
+    
+}
+.MensajeProvisional2
+{
+    width: 50px;
+    
+    box-shadow: #000000 5px;
+    margin: auto auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+ 
+    
+}
+
+.loader {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50px;
+    height: 80px;
+    border-top: 5px solid #2712b1;
+    border-bottom: 5px solid #2712b1;
+    position: relative;
+    background: linear-gradient(#c1272d 30px, transparent 0) no-repeat;
+    background-size: 2px 40px;
+    background-position: 50% 0px;
+    animation: spinx 8s linear infinite;
+  }
+  .loader:before, .loader:after {
+    content: "";
+    width: 40px;
+    left: 50%;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    transform: translatex(-50%);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0 0 20px 20px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    animation: lqt 8s linear infinite;
+  }
+  .loader:after {
+    top: auto;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    animation: lqb 8s linear infinite;
+  }
+  @keyframes lqt {
+    0%, 100% {
+      background-image: linear-gradient(#c1272d 40px, transparent 0);
+      background-position: 0% 0px;
+    }
+    50% {
+      background-image: linear-gradient(#c1272d 40px, transparent 0);
+      background-position: 0% 40px;
+    }
+    50.1% {
+      background-image: linear-gradient(#c1272d 40px, transparent 0);
+      background-position: 0% -40px;
+    }
+  }
+  @keyframes lqb {
+    0% {
+      background-image: linear-gradient(#c1272d 40px, transparent 0);
+      background-position: 0 40px;
+    }
+    100% {
+      background-image: linear-gradient(#c1272d 40px, transparent 0);
+      background-position: 0 -40px;
+    }
+  }
+  @keyframes spinx {
+    0%, 49% {
+      transform: rotate(0deg);
+      background-position: 50% 36px;
+    }
+    51%, 98% {
+      transform: rotate(180deg);
+      background-position: 50% 4px;
+    }
+    100% {
+      transform: rotate(360deg);
+      background-position: 50% 36px;
+    }
+  } 
+
+  @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+  
+  
+  .container {
+    width: 20%;
+    height: 15%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: linear-gradient( #453b86 ,#140e39);
+    border: 1px solid rgb(65, 39, 207);
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff8f8;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 800ms ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #da5257;
+    
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+      
+
+  @media screen and (max-width:800px) {
+    .cinta-arriba-roja
+{
+    
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 2%;
+}
+.bloque-cinta2
+{
+    width: 35%;
+    display: inline-block;
+    padding:4%;
+
+    
+}
+.texto-cinta-roja
+{
+    font-size: 13px;
+}
+
+.cinta-arriba-azul
+{
+    
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 2%;
+}
+.bloque-cinta1
+{
+    width: 35%;
+    display: inline-block;
+    padding:4%;
+
+    
+}
+.texto-cinta
+{
+    font-size: 13px;
+}
+
+.cinta-abajo
+{
+    background-color: #c1272d;
+    margin-top: 4%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    bottom: 0%;
+    position: fixed;
+}
+
+.icons
+{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-iconos
+{
+    width: 100%;
+    display: inline-block;
+    
+    
+    
+}
+
+
+
+.contenedor-iconos2
+{
+    width: 100%;
+    display: inline-block;
+    margin-left: 10%;
+    
+}
+
+
+
+.contenedor-iconos3
+{
+    width: 100%;
+    display: inline-block;
+    margin-left: 10%;
+    
+}
+
+
+
+.contenedor-iconos4
+{
+    width: 100%;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+
+
+
+}
