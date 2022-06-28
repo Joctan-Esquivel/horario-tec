@@ -14,6 +14,7 @@ body
     background-color: #fff;
 }
 
+
 .cinta-arriba-azul
 {
     background: linear-gradient( #453b86 ,#140e39);
@@ -46,8 +47,8 @@ body
 
 .bloque-cinta1
 {
-    margin-left: 2.5%;
-    
+    margin-left: 2%;
+    display: block;
 }
 
 .texto-cinta-roja
@@ -87,6 +88,9 @@ body
     transition: 500ms;
 
 }
+
+
+
 
 .contenedor-clases
 {
@@ -167,8 +171,6 @@ h2:hover
     padding: 1.1%;
 }
 
-
-
 .cuadros_azules
 {
     width: 45%;
@@ -176,21 +178,11 @@ h2:hover
     border: 1px black solid;
     padding: 1.1%;
 }
-
-.cuadros_beto
-{
-    width: 45%;
-    background: linear-gradient(#cea800,#da7b00);
-    border: 1px black solid;
-    padding: 1.1%;
-}
-
-
 /* Estos cuadros de abajo se utilizan unicamente en caso de que sean los ultimos cuadros de la pagina */
 .cuadros_rojos_ultimos
 {
     width: 45%;
-    background: linear-gradient(#ff7074,#9e1317);
+    background: linear-gradient(#cea800,#da7b00);
     border: 1px black solid;
     
     padding: 1.1%;
@@ -199,7 +191,7 @@ h2:hover
 .cuadros_azules_ultimos
 {
     width: 45%;
-    background: linear-gradient( #6b5fbb ,#140e39);
+    background: linear-gradient(#cea800,#da7b00);
     border: 1px black solid;
     margin-bottom: 10%;
     padding: 1.1%;
@@ -279,11 +271,10 @@ th
 
 .cinta-abajo
 {
-    
     background-color: #c1272d;
     margin-top: 4%;
     width: 100%;
-    height: 70px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +285,7 @@ th
 
 .icons
 {
-    width: 35%;
+    width: 45%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -312,7 +303,7 @@ th
 
 .contenedor-iconos:hover
 {
-    width: 12%;
+    width: 14%;
     transition: 500ms;
 }
 
@@ -326,7 +317,7 @@ th
 
 .contenedor-iconos2:hover
 {
-    width: 12%;
+    width: 14%;
     transition: 500ms;
 }
 
@@ -340,7 +331,7 @@ th
 
 .contenedor-iconos3:hover
 {
-    width: 12%;
+    width: 14%;
     transition: 500ms;
 }
 
@@ -353,7 +344,7 @@ th
 
 .contenedor-iconos4:hover
 {
-    width: 12%;
+    width: 14%;
     transition: 600ms;
 }
 
@@ -365,7 +356,7 @@ img
 /* Mensaje Provisional en caso de cambiar de semestre
 Es el simbolo de carga y el mensaje. */
 
- .MensajeProvisional
+.MensajeProvisional
 {
     width: 50%;
     
@@ -397,7 +388,7 @@ Es el simbolo de carga y el mensaje. */
     background: linear-gradient(#c1272d 30px, transparent 0) no-repeat;
     background-size: 2px 40px;
     background-position: 50% 0px;
-    animation: spinx 7s linear infinite;
+    animation: spinx 8s linear infinite;
   }
   .loader:before, .loader:after {
     content: "";
@@ -412,13 +403,13 @@ Es el simbolo de carga y el mensaje. */
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: 0 0px;
-    animation: lqt 7s linear infinite;
+    animation: lqt 8s linear infinite;
   }
   .loader:after {
     top: auto;
     bottom: 0;
     border-radius: 20px 20px 0 0;
-    animation: lqb 7s linear infinite;
+    animation: lqb 8s linear infinite;
   }
   @keyframes lqt {
     0%, 100% {
@@ -457,6 +448,170 @@ Es el simbolo de carga y el mensaje. */
       transform: rotate(360deg);
       background-position: 50% 36px;
     }
+  } 
+
+  @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+  
+  
+  .container {
+    width: 20%;
+    height: 15%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: linear-gradient( #453b86 ,#140e39);
+    border: 1px solid rgb(65, 39, 207);
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff8f8;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 800ms ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #da5257;
+    
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
   }
       
 
+  @media screen and (max-width:800px) {
+    .cinta-arriba-roja
+{
+    
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 2%;
+}
+.bloque-cinta2
+{
+    width: 35%;
+    display: inline-block;
+    padding:4%;
+
+    
+}
+.texto-cinta-roja
+{
+    font-size: 13px;
+}
+
+.cinta-arriba-azul
+{
+    
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 2%;
+}
+.bloque-cinta1
+{
+    width: 35%;
+    display: inline-block;
+    padding:4%;
+
+    
+}
+.texto-cinta
+{
+    font-size: 13px;
+}
+
+.cinta-abajo
+{
+    background-color: #c1272d;
+    margin-top: 4%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    bottom: 0%;
+    position: fixed;
+}
+
+.icons
+{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-iconos
+{
+    width: 100%;
+    display: inline-block;
+    
+    
+    
+}
+
+
+
+.contenedor-iconos2
+{
+    width: 100%;
+    display: inline-block;
+    margin-left: 10%;
+    
+}
+
+
+
+.contenedor-iconos3
+{
+    width: 100%;
+    display: inline-block;
+    margin-left: 10%;
+    
+}
+
+
+
+.contenedor-iconos4
+{
+    width: 100%;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+
+
+
+}
