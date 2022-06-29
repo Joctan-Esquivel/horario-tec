@@ -103,7 +103,7 @@ body
 
 h1
 {
-    color: #000000;
+    color: #ffffff;
     font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
@@ -134,10 +134,12 @@ h1:hover{
 .a:hover
 {
     color: #fff;
+    font-size: 15px;
+    transition: 500ms;
 }
 
 h2
-{   color: #000000;
+{   color: #ffffff;
     font-size: 19px;
     font-family: sans-serif;
     font-weight: bold;
@@ -197,33 +199,29 @@ h3
 }
 
 
-.tabla
-{
-    width: 70%;
-    margin: auto;
-    margin-top: 2%;
-}
+
 
 table
 {
     border-collapse: collapse;
-    width: 90%;
+    width: 90.5%;
     border: 1px rgb(0, 0, 0) solid;
     border-radius: 7px;
     margin: auto;
-    padding: 2%;
+    padding: 1%;
 }
 
 tr, td
 {
     border: 1px black solid;
-    padding: 2%;
+    
 }
 
 td
 {
     text-align: center;
-    font-weight: bold;
+    width: 10%;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aliceblue;
 }
@@ -234,7 +232,7 @@ th
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(89, 101, 211);
-    padding: 2%;
+    padding: 1.5%;
 }
 .boton
 {
@@ -387,8 +385,11 @@ img
       
 
   @media screen and (max-width:800px) {
-body{
+
+    body{
     background-color: #df5b5f;;
+    width: auto;
+    overflow-x: hidden;
 }
 .cinta-arriba-roja
 {
@@ -397,17 +398,18 @@ body{
     height: auto;
     display: inline-block;
     text-align: center;
-    padding: 2%;
+    
 }
 .bloque-cinta2
 {
     width: 35%;
     display: inline-block;
-    padding:3%;
+    padding:2%;
     border: 1px solid white;
     border-radius: 60px;
     background: linear-gradient(#e75d62 , #a7272b );
     margin-top: 2%;
+    margin-bottom: 2%;
 
     
 }
@@ -515,6 +517,8 @@ body{
 .contenedor-logo-tec
 {
     width: 45%;
+    display: block;
+    margin: auto;
 }
 
 
