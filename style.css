@@ -287,6 +287,15 @@ th
 
 }
 
+.celdaEntrarClase{
+    background-color: rgb(89, 101, 211);
+}
+
+.celdaEntrarClase:hover{
+    background-color:#d95156;
+    transition:400ms ;
+}
+
 
 
 
