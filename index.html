@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,user-scalable="no", initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     
+    
     <title>Horario TEC</title>
 </head>
 <body>
@@ -138,7 +139,7 @@
             <h2>Clases impartidas</h2>
             <table>
                 <tr>
-                    <th><a href="#" target="_blank" class="a" >Cálculo y Algebra Lineal</a></th>
+                    <th id="celdaCAL"><a href="#" target="_blank" class="a" " >Cálculo y Algebra Lineal</a></th>
                     <td>08</td>
                 </tr>
                 <tr>
@@ -842,6 +843,20 @@
 
         </div>
     </footer>
+    <script>
+        var algebra = document.getElementById("celdaCAL");
+
+algebra.addEventListener("click",function(){
+    var opcion = prompt("1. Entrar a Curso en TEC Digital\n2. Entrar a material en OneDrive\nDigite la opcion deseada o presione ENTER para salir");
+    if (opcion==="1") {
+        window.open("https://tecdigital.tec.ac.cr/dotlrn/classes/MA/MA1103/S-2-2022.CA.MA1103.7/one-community?page_num=0&loc=")
+    }else{
+        if (opcion==="2") {
+        window.open("https://tecnube1-my.sharepoint.com/:f:/g/personal/nrodriguez_itcr_ac_cr/ElWN4V2pHj1OiiOpIf-OWRwBwXf8i3ondd0WX4mn-Xx0wA?e=KBuzue")
+        }
+    }
+});
+    </script>
     
 </body>
 </html>
